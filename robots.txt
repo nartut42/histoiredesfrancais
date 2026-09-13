@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /stock/
+Sitemap: https://Histoiredelafrance.fr\histoiredesfrancais\sitemap.xml"

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Bataille du rail - Film (1946) — SecondeGuerreMondiale.free.fr</title>
+  <meta name="description" content="Découvrez La Bataille du rail (1946), film historique de René Clément retraçant la résistance des cheminots français durant l'Occupation.">
+  
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-5288172791580511">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5288172791580511" crossorigin="anonymous"></script>
+
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0b0d12;
+      --bg-card: #141822;
+      --bg-card-hover: #1c2230;
+      --border-color: #232b3e;
+      --accent-gold: #d97706;
+      --accent-gold-light: #fbbf24;
+      --accent-red: #dc2626;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(180deg, #121622 0%, #0b0d12 100%);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--accent-gold), #78350f);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+    }
+
+    .brand-text h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.5px;
+    }
+
+    .brand-text span {
+      color: var(--accent-gold-light);
+      font-size: 0.75rem;
+      display: block;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-gold-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 8px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .back-link:hover {
+      background: var(--accent-gold);
+      color: #000;
+      border-color: var(--accent-gold);
+    }
+
+    .main-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .movie-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .movie-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .card-badges {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .badge-type {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-fic { 
+      background: rgba(16, 185, 129, 0.15); 
+      color: #34d399; 
+      border: 1px solid rgba(16, 185, 129, 0.3); 
+    }
+
+    .badge-time {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-family: monospace;
+    }
+
+    .movie-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--accent-gold-light);
+      font-style: italic;
+    }
+
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
+      color: var(--text-main);
+      margin: 28px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .synopsis p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .technical-sheet ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .technical-sheet li {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .technical-sheet strong {
+      color: var(--text-main);
+    }
+
+    footer {
+      margin-top: 80px;
+      border-top: 1px solid var(--border-color);
+      background: #07080b;
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      color: var(--accent-gold-light);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .movie-card {
+        padding: 24px;
+      }
+      .technical-sheet ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="brand">
+        <div class="brand-icon">SGM</div>
+        <div class="brand-text">
+          <h1>SecondeGuerreMondiale.free.fr</h1>
+          <span>Médiathèque & Archives 1939-1945</span>
+        </div>
+      </a>
+      <a href="../index.html" class="back-link">← Retour à l'accueil</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="main-container">
+    <article class="movie-card">
+      <div class="movie-header">
+        <div class="card-badges">
+          <span class="badge-type badge-fic">Classique / Fiction</span>
+          <span class="badge-time">85 min • 1946</span>
+        </div>
+        <h1 class="movie-title">La Bataille du rail</h1>
+        <p class="subtitle">Un hommage aux cheminots français engagés dans la Résistance.</p>
+      </div>
+
+      <section class="synopsis">
+        <h2 class="section-title">Synopsis</h2>
+        <p>Pendant l'Occupation allemande, les cheminots français s'organisent pour saboter les convois militaires, retarder les transports d'armement nazi et transmettre des renseignements clés à la Résistance, au péril de leur vie.</p>
+      </section>
+
+      <section class="technical-sheet">
+        <h2 class="section-title">Fiche Technique</h2>
+        <ul>
+          <li><strong>Titre original :</strong> La Bataille du rail</li>
+          <li><strong>Réalisation :</strong> René Clément</li>
+          <li><strong>Acteurs principaux :</strong> Jean Clarieux, Jean Daurand, François Joux</li>
+          <li><strong>Genre :</strong> Guerre, Drame, Historique</li>
+          <li><strong>Durée :</strong> 1h 25min (85 min)</li>
+          <li><strong>Date de sortie :</strong> 1946</li>
+          <li><strong>Distinction :</strong> Prix du Jury — Festival de Cannes 1946</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>SecondeGuerreMondiale.free.fr</strong> — Portail d'archivage et de ressources audiovisuelles</p>
+    <p>Hommage aux victimes, aux combattants et aux résistants de la Guerre 1939-1945.</p>
+    <p style="margin-top: 15px; font-size: 0.75rem; color: #475569;">Site non-commercial à visée éducative et patrimoniale.</p>
+  </footer>
+
+</body>
+</html>

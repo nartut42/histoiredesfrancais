@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Chute (Der Untergang, 2004) — SecondeGuerreMondiale.free.fr</title>
+  <meta name="description" content="Découvrez La Chute (Der Untergang, 2004), retraçant les douze derniers jours d'Adolf Hitler dans son bunker à Berlin.">
+  
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-5288172791580511">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5288172791580511" crossorigin="anonymous"></script>
+
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0b0d12;
+      --bg-card: #141822;
+      --border-color: #232b3e;
+      --accent-gold: #d97706;
+      --accent-gold-light: #fbbf24;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(180deg, #121622 0%, #0b0d12 100%);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--accent-gold), #78350f);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+    }
+
+    .brand-text h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.5px;
+    }
+
+    .brand-text span {
+      color: var(--accent-gold-light);
+      font-size: 0.75rem;
+      display: block;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .back-link {
+      color: var(--accent-gold-light);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .movie-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+
+    .badges {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .badge-fic {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .badge-time {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-family: monospace;
+      align-self: center;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--accent-gold-light);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .content-section {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .content-section h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .content-section p {
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .tech-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+    }
+
+    .tech-list li {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .tech-list strong {
+      color: var(--text-main);
+    }
+
+    footer {
+      margin-top: 80px;
+      border-top: 1px solid var(--border-color);
+      background: #07080b;
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="brand">
+        <div class="brand-icon">SGM</div>
+        <div class="brand-text">
+          <h1>SecondeGuerreMondiale.free.fr</h1>
+          <span>Médiathèque & Archives 1939-1945</span>
+        </div>
+      </a>
+      <a href="../index.html" class="back-link">← Retour à la médiathèque</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-container">
+    <article class="movie-card">
+      
+      <div class="badges">
+        <span class="badge-fic">Drame Historique</span>
+        <span class="badge-time">156 min • 2004</span>
+      </div>
+
+      <h1>La Chute</h1>
+      <p class="subtitle">Les ultimes heures du régime nazi au cœur du bunker d'Hitler.</p>
+
+      <section class="content-section">
+        <h2>Synopsis</h2>
+        <p>Avril 1945. L'Armée rouge cerne Berlin. Réfugié dans son Führerbunker avec ses derniers fidèles et sa secrétaire Traudl Junge, Adolf Hitler refuse la capitulation alors que son régime s'effondre dans le chaos et la paranoïa.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Fiche Technique</h2>
+        <ul class="tech-list">
+          <li><strong>Titre original :</strong> Der Untergang</li>
+          <li><strong>Réalisation :</strong> Oliver Hirschbiegel</li>
+          <li><strong>Acteurs :</strong> Bruno Ganz, Alexandra Maria Lara, Corinna Harfouch</li>
+          <li><strong>Genre :</strong> Biopic, Drame, Historique</li>
+          <li><strong>Durée :</strong> 2h 36min (156 min)</li>
+          <li><strong>Éditeur :</strong> TF1 Vidéo</li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>SecondeGuerreMondiale.free.fr</strong> — Portail d'archivage et de ressources audiovisuelles</p>
+    <p>Hommage aux victimes, aux combattants et aux résistants de la Guerre 1939-1945.</p>
+  </footer>
+
+</body>
+</html>

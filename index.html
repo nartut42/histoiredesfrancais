@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Médiathèque & Archives Audiovisuelles — Seconde Guerre Mondiale (1939-1945)</title>
+  <meta name="description" content="Portail documentaire et cinématographique complet sur la Seconde Guerre Mondiale : films, séries, grands documentaires et archives audiovisuelles mondiales.">
+  <meta name="keywords" content="Seconde Guerre Mondiale, 1939-1945, films guerre, documentaires shoah, archivesINA, Bundesarchiv, Imperial War Museum, memoire 39-45">
+  
+  <!-- Google Adsense -->
+  <meta name="google-adsense-account" content="ca-pub-5288172791580511">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5288172791580511" crossorigin="anonymous"></script>
+
+  <!-- Balises SEO Fondamentales -->
+  <link rel="canonical" href="https://histoiredesfrancais.pages-perso.free.fr/index.html">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0b0d12;
+      --bg-card: #141822;
+      --bg-card-hover: #1c2333;
+      --border-color: #232b3e;
+      --accent-gold: #d97706;
+      --accent-gold-light: #fbbf24;
+      --accent-blue: #2563eb;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: linear-gradient(180deg, #121622 0%, #0b0d12 100%);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--accent-gold), #78350f);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+    }
+
+    .brand-text h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: 0.5px;
+    }
+
+    .brand-text span {
+      color: var(--accent-gold-light);
+      font-size: 0.75rem;
+      display: block;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 24px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .controls {
+      max-width: 1300px;
+      margin: 0 auto 30px;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      color: white;
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent-gold);
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+    }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent-gold);
+      color: white;
+      border-color: var(--accent-gold);
+    }
+
+    .grid-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background: var(--bg-card-hover);
+      border-color: rgba(217, 119, 6, 0.4);
+      box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-type {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      width: fit-content;
+      margin-bottom: 12px;
+    }
+
+    .type-fic { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .type-doc { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .type-arch { background: rgba(217, 119, 6, 0.15); color: #fbbf24; border: 1px solid rgba(217, 119, 6, 0.3); }
+
+    .card-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-main);
+      line-height: 1.3;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border-color);
+      padding-top: 12px;
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    .card-footer .action {
+      color: var(--accent-gold-light);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    footer {
+      margin-top: 80px;
+      border-top: 1px solid var(--border-color);
+      background: #07080b;
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 1.8rem; }
+      .grid-container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">SGM</div>
+        <div class="brand-text">
+          <h1>SecondeGuerreMondiale.free.fr</h1>
+          <span>Médiathèque & Archives 1939-1945</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1 class="hero-title">Mémoire Audiovisuelle & Cinématographique</h1>
+    <p class="hero-subtitle">Une sélection exhaustive de films de fiction, séries de référence, grands documentaires historiques et fonds d'archives numérisés sur le conflit 1939-1945.</p>
+  </section>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Rechercher une œuvre, un réalisateur, un fonds d'archives..." onkeyup="filterCards()">
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterCategory('all', this)">Tous</button>
+      <button class="filter-btn" onclick="filterCategory('fic', this)">Cinéma & Fictions</button>
+      <button class="filter-btn" onclick="filterCategory('doc', this)">Documentaires & Séries</button>
+      <button class="filter-btn" onclick="filterCategory('arch', this)">Archives Numérisées</button>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <main class="grid-container" id="cardsGrid">
+
+    <a href="oeuvres/39-45-de-la-france-occupee-a-la-france-liberee.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">39-45 : De la France occupée à la France libérée (2015)</h2>
+        <p class="card-desc">Série documentaire retraçant les années sombres de l'Occupation jusqu'à la Libération à travers des images d'archives inédites et restaurées.</p>
+      </div>
+      <div class="card-footer">
+        <span>France Télévisions</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/apocalypse-la-2nde-guerre-mondiale.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">Apocalypse : La 2de Guerre Mondiale (2009)</h2>
+        <p class="card-desc">Série événement de Isabelle Clarke et Daniel Costelle. Images d'époque colorisées et remasterisées retraçant l'intégralité du conflit.</p>
+      </div>
+      <div class="card-footer">
+        <span>6 Épisodes • Colorisé</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/apres-hitler.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Après Hitler (2016)</h2>
+        <p class="card-desc">Documentaire retraçant le chaos immédiat de l'après-guerre en Europe (1945-1949), le drame des déplacés et la reconstruction.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. D. Costelle</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/archives-du-memorial-de-la-shoah.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Archives du Mémorial de la Shoah</h2>
+        <p class="card-desc">Centre de documentation juive contemporaine (CDJC). Photographies, témoignages oraux, documents administratifs et registres de déportation.</p>
+      </div>
+      <div class="card-footer">
+        <span>Paris • CDJC</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/archivio-storico-istituto-luce.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Archivio Storico Istituto Luce (Italie)</h2>
+        <p class="card-desc">Fonds audiovisuel de la propagande fasciste italienne, des campagnes d'Afrique et de la Seconde Guerre Mondiale en Méditerranée.</p>
+      </div>
+      <div class="card-footer">
+        <span>Italie • Rome</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/arolsen-archives.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Arolsen Archives (International Center on Nazi Persecution)</h2>
+        <p class="card-desc">Le plus grand centre d'archives au monde sur les victimes du nazisme, le travail forcé et la Shoah (plus de 30 millions de documents).</p>
+      </div>
+      <div class="card-footer">
+        <span>Allemagne • Bad Arolsen</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/ascension-et-chute-du-3e-reich.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">Ascension et chute du 3e Reich (2010)</h2>
+        <p class="card-desc">Série historique retraçant la genèse du NSDAP, la prise de pouvoir de 1933, la machine de guerre nazi et son effondrement total en 1945.</p>
+      </div>
+      <div class="card-footer">
+        <span>History Channel</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/au-revoir-les-enfants.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Au revoir les enfants (1987)</h2>
+        <p class="card-desc">Drame autobiographique de Louis Malle. L'amitié entre deux jeunes garçons dans un collège catholique sous l'Occupation et la rafle des enfants juifs.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. Louis Malle</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/auschwitz-les-nazis-et-la-solution-finale.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">Auschwitz : Les nazis et la Solution Finale (2005)</h2>
+        <p class="card-desc">Série documentaire de la BBC par Laurence Rees. Une analyse rigoureuse de la création, du fonctionnement et de la bureaucratie du camp de concentration et d'extermination.</p>
+      </div>
+      <div class="card-footer">
+        <span>BBC • 6 Épisodes</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/british-pathe-wwii-collection.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">British Pathé WWII Collection</h2>
+        <p class="card-desc">Plus de 85 000 actualités filmées britanniques d'époque traitant de la guerre du Pacifique, du Blitz, du débarquement et de la Libération.</p>
+      </div>
+      <div class="card-footer">
+        <span>Royaume-Uni • Londres</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/bundesarchiv-filmarchiv.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Bundesarchiv Filmarchiv (Allemagne)</h2>
+        <p class="card-desc">Archives fédérales allemandes numérisées : actualités (Die Deutsche Wochenschau), films d'instruction militaire et documents d'État du IIIe Reich.</p>
+      </div>
+      <div class="card-footer">
+        <span>Allemagne • Berlin</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/das-boot.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Das Boot - Le Bateau (1981)</h2>
+        <p class="card-desc">Le film culte de Wolfgang Petersen décrivant la claustrophobie et la terreur psychologique de l'équipage d'un sous-marin allemand U-96 dans l'Atlantique.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. W. Petersen</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/das-reich-une-division-ss-en-france.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Das Reich, une division SS en France (2015)</h2>
+        <p class="card-desc">Documentaire historique retraçant le parcours sanglant de la division SS Das Reich de la Russie au massacre d'Oradour-sur-Glane et de Tulle en 1944.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. M. Weinberg</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/de-nuremberg-a-nuremberg.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">De Nuremberg à Nuremberg (1989)</h2>
+        <p class="card-desc">Monument documentaire de Frédéric Rossif commenté par Philippe Meyer, analysant la montée du triomphalisme nazi à Nuremberg jusqu'au procès des criminels de guerre.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. F. Rossif</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/deutschland-im-krieg.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">Deutschland im Krieg (L'Allemagne en guerre)</h2>
+        <p class="card-desc">Documents d'archives et témoignages sur la vie quotidienne, la propagande et la destruction de la population civile allemande sous le régime nazi.</p>
+      </div>
+      <div class="card-footer">
+        <span>Série Allemande</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/dunkerque.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Dunkerque (2017)</h2>
+        <p class="card-desc">Film spectaculaire de Christopher Nolan restituant l'opération Dynamo de mai-juin 1940 depuis la plage, la mer et le ciel.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. C. Nolan</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/five-came-back.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">Five Came Back (2017)</h2>
+        <p class="card-desc">Série consacrée aux cinq grands réalisateurs d'Hollywood (Ford, Capra, Huston, Wyler, Stevens) partis sur le front filmer le conflit armé.</p>
+      </div>
+      <div class="card-footer">
+        <span>Netflix Original</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/fonds-audiovisuel-de-l-ecpad.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Fonds Audiovisuel de l'ECPAD (France)</h2>
+        <p class="card-desc">Établissement de Communication et de Production Audiovisuelle de la Défense. Archives militaires françaises sur la campagne de 1940, Vichy et la Libération.</p>
+      </div>
+      <div class="card-footer">
+        <span>France • Ivry-sur-Seine</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/fonds-filmographique-du-front-de-l-est.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Fonds Filmographique du Front de l'Est (RGAKFD - Russie)</h2>
+        <p class="card-desc">Archives d'État de Krasnogorsk contenant la totalité des films de guerre tournés par les caméramans de l'Armée rouge de 1941 à la prise de Berlin.</p>
+      </div>
+      <div class="card-footer">
+        <span>Russie • Krasnogorsk</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/freres-d-armes.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Frères d'armes - Band of Brothers (2001)</h2>
+        <p class="card-desc">Chef-d'œuvre télévisuel produit par Steven Spielberg et Tom Hanks suivant l'Easy Company de la 101e Airborne, du D-Day à l'Aigle d'Or.</p>
+      </div>
+      <div class="card-footer">
+        <span>HBO • 10 Épisodes</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/il-faut-sauver-le-soldat-ryan.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Il faut sauver le soldat Ryan (1998)</h2>
+        <p class="card-desc">Drame d'action monumental de Steven Spielberg. L'assaut hyperréaliste d'Omaha Beach et la recherche du soldat James Ryan en Normandie.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. S. Spielberg</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/ils-aimaient-la-vie.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Ils aimaient la vie - Kanal (1957)</h2>
+        <p class="card-desc">Réalisé par Andrzej Wajda. Le drame tragique de l'insurrection de Varsovie en 1944 et le calvaire des combattants polonais dans les égouts.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. A. Wajda</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/imperial-war-museums-film-archive.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Imperial War Museums Film Archive (IWM)</h2>
+        <p class="card-desc">L'un des plus anciens et riches fonds d'images animées militaires au monde couvrant l'effort de guerre du Commonwealth de 1939 à 1945.</p>
+      </div>
+      <div class="card-footer">
+        <span>Royaume-Uni • IWM</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/katyn.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Katyn (2007)</h2>
+        <p class="card-desc">Film d'Andrzej Wajda retraçant le massacre d'officiers polonais exécutés par le NKVD soviétique en 1940 et les décennies de mensonges d'État.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. A. Wajda</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/l-appel-du-18-juin.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">L'Appel du 18 Juin (2010)</h2>
+        <p class="card-desc">Documentaire historique retraçant le parcours politique du Général de Gaulle et l'histoire de son discours fondateur radiodiffusé depuis la BBC à Londres.</p>
+      </div>
+      <div class="card-footer">
+        <span>France Télévisions</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/l-armee-des-ombres.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">L'Armée des ombres (1969)</h2>
+        <p class="card-desc">Le chef-d'œuvre de Jean-Pierre Melville avec Lino Ventura, retraçant le quotidien austère, tragique et héroïque du réseau de la Résistance française.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. J.-P. Melville</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/l-armee-du-crime.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">L'Armée du crime (2009)</h2>
+        <p class="card-desc">Réalisé par Robert Guédiguian. L'histoire vraie du groupe Manouchian et de l'Affiche Rouge à Paris sous l'Occupation.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Guédiguian</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/l-enfance-d-ivan.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">L'Enfance d'Ivan (1962)</h2>
+        <p class="card-desc">Premier chef-d'œuvre d'Andreï Tarkovski. La trajectoire brisée d'un orphelin devenant éclaireur pour l'Armée rouge sur le front de l'Est.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. A. Tarkovski</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-bataille-du-rail.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">La Bataille du rail (1946)</h2>
+        <p class="card-desc">Film marquant de René Clément illustrant la résistance clandestine et le sabotage mené par les cheminots français contre l'occupant nazi.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Clément</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-chute.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">La Chute (2004)</h2>
+        <p class="card-desc">Interprété magistralement par Bruno Ganz. Le récit immersif des derniers jours d'Adolf Hitler et du régime nazi au fond du Führerbunker à Berlin.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. O. Hirschbiegel</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-chute-du-reich.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">La Chute du Reich (2015)</h2>
+        <p class="card-desc">Récit historique retraçant les ultimes mois de la guerre en Europe, de la bataille des Ardennes à la capitulation sans condition du 8 mai 1945.</p>
+      </div>
+      <div class="card-footer">
+        <span>Documentaire Historique</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-ligne-rouge.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">La Ligne rouge (1998)</h2>
+        <p class="card-desc">Fresque philosophique et poétique de Terrence Malick retraçant la sanglante bataille de Guadalcanal au cœur du Pacifique.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. T. Malick</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-liste-de-schindler.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">La Liste de Schindler (1993)</h2>
+        <p class="card-desc">Chef-d'œuvre de Steven Spielberg couronné de 7 Oscars, retraçant le sauvetage de plus de 1 100 Juifs par l'industriel Oskar Schindler.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. S. Spielberg</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-rafle.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">La Rafle (2010)</h2>
+        <p class="card-desc">Drame historique réalisé par Roselyne Bosch sur l'arrestation massive des familles juives à Paris en juillet 1942 et l'enfer du Vel' d'Hiv.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Bosch</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-traversee-de-paris.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">La Traversée de Paris (1956)</h2>
+        <p class="card-desc">Comédie noire de Claude Autant-Lara avec Jean Gabin et Bourvil. Le marché noir et la trahison ordinaire sous l'Occupation nazie à Paris.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. C. Autant-Lara</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/la-vie-est-belle.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">La vie est belle (1997)</h2>
+        <p class="card-desc">Fable tragico-comique de Roberto Benigni. Un père italien utilise son imagination débordante pour préserver son jeune fils de l'horreur des camps.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Benigni</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-chagrin-et-la-pitie.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Le Chagrin et la Pitié (1971)</h2>
+        <p class="card-desc">Le documentaire fondateur de Marcel Ophüls sur la vie d'une ville française (Clermont-Ferrand) sous l'Occupation, brisant le mythe d'une France unanimement résistante.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. M. Ophüls</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-dernier-metro.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Le Dernier Métro (1980)</h2>
+        <p class="card-desc">Film de François Truffaut avec Catherine Deneuve et Gérard Depardieu. La vie quotidienne d'une troupe de théâtre parisienne sous l'Occupation nazie.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. F. Truffaut</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-fils-de-saul.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Le Fils de Saul (2015)</h2>
+        <p class="card-desc">Grand Prix du Festival de Cannes. Un plongée immersive et poignante au cœur d'Auschwitz-Birkenau aux côtés d'un membre du Sonderkommando.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. L. Nemes</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-pianiste.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Le Pianiste (2002)</h2>
+        <p class="card-desc">Palme d'Or de Roman Polanski avec Adrien Brody. L'histoire vraie du virtuose Władysław Szpilman survivant dans le ghetto de Varsovie en ruines.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Polanski</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-pont.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Le Pont (1959)</h2>
+        <p class="card-desc">Film antimilitariste allemand de Bernhard Wicki. La tragédie de jeunes adolescents embrigadés in extremis par le régime nazi en avril 1945.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. B. Wicki</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-proces-d-adolf-eichmann-a-jerusalem.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Le Procès d'Adolf Eichmann à Jérusalem (1961)</h2>
+        <p class="card-desc">Les enregistrements télévisés du procès historique de l'organisateur de la Shoah, événement fondateur pour la prise de conscience mondiale du génocide.</p>
+      </div>
+      <div class="card-footer">
+        <span>Archives Judiciaires</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-silence-de-la-mer.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Le Silence de la mer (1949)</h2>
+        <p class="card-desc">Adaptation magistrale par Jean-Pierre Melville de la nouvelle de Vercors écrite dans la clandestinité sous la France occupée.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. J.-P. Melville</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-tombeau-des-lucioles.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Le Tombeau des lucioles (1988)</h2>
+        <p class="card-desc">Chef-d'œuvre d'animation du Studio Ghibli réalisé par Isao Takahata, décrivant la survie tragique d'un frère et sa sœur après le bombardement de Kobe.</p>
+      </div>
+      <div class="card-footer">
+        <span>Studio Ghibli</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/le-vieux-fusil.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Le Vieux Fusil (1975)</h2>
+        <p class="card-desc">Film marquant de Robert Enrico avec Philippe Noiret et Romy Schneider, inspiré du drame et du massacre d'Oradour-sur-Glane en 1944.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Enrico</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/les-actualites-francaises.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Les Actualités Françaises (1940-1945)</h2>
+        <p class="card-desc">Le journal télévisé et cinématographique diffusé sous le gouvernement de Vichy puis sous le Comité Français de la Libération Nationale (INA).</p>
+      </div>
+      <div class="card-footer">
+        <span>INA France</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/les-films-interdits.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Les Films interdits - Verbotene Filme (2014)</h2>
+        <p class="card-desc">Documentaire d'investigation de Felix Moeller analysant les 40 films de propagande nazie antisémite toujours sous séquestre d'État en Allemagne.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. F. Moeller</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/les-quatre-soeurs.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">Les Quatre Sœurs (2018)</h2>
+        <p class="card-desc">Série documentaire de Claude Lanzmann réunissant quatre récits exceptionnels de femmes rescapées des camps de concentration nazi.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. C. Lanzmann</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/lettres-d-iwo-jima.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Lettres d'Iwo Jima (2006)</h2>
+        <p class="card-desc">Film de Clint Eastwood décrivant la bataille d'Iwo Jima du point de vue des soldats et officiers japonais retranchés dans les grottes de l'île.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. C. Eastwood</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/lucie-aubrac.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Lucie Aubrac (1997)</h2>
+        <p class="card-desc">Réalisé par Claude Berri. L'histoire d'amour et de combat de la résistante Lucie Aubrac pour faire évasion à son mari Raymond détenu par la Gestapo.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. C. Berri</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/nara-wwii-motion-picture-collection.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">NARA - Motion Picture Collection (USA)</h2>
+        <p class="card-desc">National Archives and Records Administration des États-Unis : la plus grande banque publique de films militaires américains 1941-1945.</p>
+      </div>
+      <div class="card-footer">
+        <span>USA • Washington</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/nhk-war-archives.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">NHK War Archives (Japon)</h2>
+        <p class="card-desc">Archives nationales de la télévision publique japonaise NHK conservant les témoignages, cartes, et enregistrements du conflit dans l'Océan Pacifique.</p>
+      </div>
+      <div class="card-footer">
+        <span>Japon • Tokyo</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/nuit-et-brouillard.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Nuit et Brouillard (1956)</h2>
+        <p class="card-desc">Court-métrage documentaire essentiel d'Alain Resnais sur un texte de Jean Cayrol, pionnier de la mémoire filmique de la déportation.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. A. Resnais</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/nuremberg-ses-lecons-pour-aujourdhui.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Nuremberg : Ses leçons pour aujourd'hui (1948)</h2>
+        <p class="card-desc">Le film officiel du gouvernement américain réalisé par Stuart Schulberg à partir des preuves audiovisuelles présentées lors du procès de Nuremberg.</p>
+      </div>
+      <div class="card-footer">
+        <span>Doc. Officiel US</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/oradour-retour-sur-un-massacre.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Oradour, retour sur un massacre (2020)</h2>
+        <p class="card-desc">Enquête documentaire revenant sur les événements tragiques du 10 juin 1944 dans le village martyr de la Haute-Vienne et les procès ultérieurs.</p>
+      </div>
+      <div class="card-footer">
+        <span>France Télévisions</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/pamet-naroda.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Paměť národa (Mémoire des Nations - Tchéquie)</h2>
+        <p class="card-desc">Base de données d'archives orales d'Europe centrale recueillant les témoignages de la Résistance tchèque, de la Shoah et de l'Occupation nazie.</p>
+      </div>
+      <div class="card-footer">
+        <span>Tchéquie • Prague</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/requiem-pour-un-massacre.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Requiem pour un massacre - Va et vois (1985)</h2>
+        <p class="card-desc">Chef-d'œuvre soviétique d'Elem Klimov. La traversée cauchemardesque et terrifiante d'un jeune adolescent en Biélorussie occupée en 1943.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. E. Klimov</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/rome-ville-ouverte.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Rome, ville ouverte (1945)</h2>
+        <p class="card-desc">Film fondateur du néoréalisme italien réalisé par Roberto Rossellini avec Anna Magnani, tourné dans Rome à peine libérée des troupes nazies.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Rossellini</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/section-speciale.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Section spéciale (1975)</h2>
+        <p class="card-desc">Drame politique de Costa-Gavras analysant la mise en place des tribunals d'exception par le gouvernement de Vichy en 1941.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. Costa-Gavras</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/shoah.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Documentaire</span>
+        <h2 class="card-title">Shoah (1985)</h2>
+        <p class="card-desc">L'œuvre monumentale de 9h30 de Claude Lanzmann. Un chef-d'œuvre cinématographique constitué exclusivement de témoignages de survivants, de témoins et de bourreaux.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. C. Lanzmann</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/stalingrad.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Stalingrad (1993)</h2>
+        <p class="card-desc">Film d'action et drame historique de Joseph Vilsmaier décrivant l'enfer du front de l'Est et l'anéantissement de la 6e Armée allemande.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. J. Vilsmaier</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/the-pacific.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">The Pacific (2010)</h2>
+        <p class="card-desc">Série événement retraçant les batailles brutales des Marines américains dans la guerre du Pacifique (Guadalcanal, Peleliu, Okinawa).</p>
+      </div>
+      <div class="card-footer">
+        <span>HBO • 10 Épisodes</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/the-war.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">The War (2007)</h2>
+        <p class="card-desc">Série monumentale de Ken Burns retraçant la Seconde Guerre Mondiale à travers le quotidien des habitants de quatre villes américaines.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. Ken Burns • PBS</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/the-world-at-war.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">The World at War (1973)</h2>
+        <p class="card-desc">La série documentaire britannique de référence produite par Thames Television, narrée par Laurence Olivier.</p>
+      </div>
+      <div class="card-footer">
+        <span>Thames TV • 26 Épisodes</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/un-heros-tres-discret.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Un héros très discret (1996)</h2>
+        <p class="card-desc">Comédie dramatique de Jacques Audiard avec Mathieu Kassovitz. Un homme ordinaire s'invente un passé héroïque de résistant à la Libération.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. J. Audiard</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/un-pont-trop-loin.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Un pont trop loin (1977)</h2>
+        <p class="card-desc">Fresque militaire spectaculaire de Richard Attenborough sur l'opération aéroportée alliée Market Garden en Hollande en septembre 1944.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. R. Attenborough</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/un-village-francais.html" class="card" data-cat="fic">
+      <div>
+        <span class="card-type type-fic">Cinéma / Fiction</span>
+        <h2 class="card-title">Un village français (2009-2017)</h2>
+        <p class="card-desc">Série télévisée de référence retraçant la vie des habitants d'une petite commune du Jura sous l'Occupation, la Collaboration et la Résistance.</p>
+      </div>
+      <div class="card-footer">
+        <span>France Télévisions • 7 Saisons</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/usc-shoah-foundation.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">USC Shoah Foundation</h2>
+        <p class="card-desc">Fonds d'archives audiovisuelles fondé par Steven Spielberg, rassemblant plus de 55 000 témoignages vidéo de survivants et témoins des génocides.</p>
+      </div>
+      <div class="card-footer">
+        <span>USA • Université de Californie</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/why-we-fight.html" class="card" data-cat="doc">
+      <div>
+        <span class="card-type type-doc">Série Documentaire</span>
+        <h2 class="card-title">Why We Fight (Pourquoi nous combattons)</h2>
+        <p class="card-desc">Série de sept films de propagande et d'information réalisés par Frank Capra pour le gouvernement américain entre 1942 et 1945.</p>
+      </div>
+      <div class="card-footer">
+        <span>Réal. Frank Capra</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+    <a href="oeuvres/yad-vashem-film-photo-archives.html" class="card" data-cat="arch">
+      <div>
+        <span class="card-type type-arch">Archives Officiel</span>
+        <h2 class="card-title">Yad Vashem Photo & Film Archives</h2>
+        <p class="card-desc">Centre mondial de mémoire de la Shoah à Jérusalem : collections permanentes de photographies, enregistrements et documents cinématographiques.</p>
+      </div>
+      <div class="card-footer">
+        <span>Israël • Jérusalem</span>
+        <span class="action">Consulter →</span>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>SecondeGuerreMondiale.free.fr</strong> — Portail d'archivage et de ressources audiovisuelles</p>
+    <p>Hommage aux victimes, aux combattants et aux résistants de la Guerre 1939-1945.</p>
+  </footer>
+
+  <!-- SCRIPT FILTRAGE EN TEMPS RÉEL -->
+  <script>
+    function filterCards() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(input)) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    function filterCategory(category, btnElement) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      btnElement.classList.add('active');
+
+      const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.style.display = "flex";
+        } else {
+          const cat = card.getAttribute('data-cat');
+          if (cat === category) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>

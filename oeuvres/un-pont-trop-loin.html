@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fiche détaillée : Un pont trop loin (A Bridge Too Far) - Médiathèque Seconde Guerre Mondiale">
+  <meta name="google-adsense-account" content="ca-pub-5288172791580511">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5288172791580511" crossorigin="anonymous"></script>
+  <title>Un pont trop loin — SecondeGuerreMondiale.free.fr</title>
+  
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0b0d12;
+      --bg-card: #141822;
+      --bg-card-hover: #1c2230;
+      --border-color: #232b3e;
+      --accent-gold: #d97706;
+      --accent-gold-light: #fbbf24;
+      --accent-red: #dc2626;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.7;
+      padding-bottom: 60px;
+    }
+
+    /* NAVIGATION HEADER */
+    header {
+      background: linear-gradient(180deg, #121622 0%, #0b0d12 100%);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-gold-light);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: transform 0.2s ease;
+    }
+
+    .back-btn:hover {
+      transform: translateX(-4px);
+      color: var(--accent-gold);
+    }
+
+    .brand-title {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      letter-spacing: 1px;
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    /* HERO OEUVRE */
+    .oeuvre-header {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .oeuvre-header::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 300px;
+      background: radial-gradient(circle, rgba(217, 119, 6, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .badges-list {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-type { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .badge-year { background: rgba(217, 119, 6, 0.15); color: var(--accent-gold-light); border: 1px solid rgba(217, 119, 6, 0.3); }
+
+    .oeuvre-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .oeuvre-subtitle {
+      font-size: 1.1rem;
+      color: var(--accent-gold-light);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .quick-meta {
+      display: flex;
+      gap: 24px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .quick-meta span strong {
+      color: var(--text-main);
+    }
+
+    /* GRID LAYOUT */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 32px;
+    }
+
+    /* LEFT CONTENT */
+    .main-article {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .section-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .section-box h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-box p {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .section-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-quote {
+      background: rgba(217, 119, 6, 0.08);
+      border-left: 4px solid var(--accent-gold);
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-style: italic;
+      color: var(--text-main);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .key-points {
+      list-style: none;
+      margin-top: 12px;
+    }
+
+    .key-points li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: var(--text-muted);
+    }
+
+    .key-points li::before {
+      content: "•";
+      color: var(--accent-gold);
+      font-size: 1.5rem;
+      position: absolute;
+      left: 6px;
+      top: -4px;
+    }
+
+    /* RIGHT SIDEBAR */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    .tech-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .tech-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .tech-table td {
+      padding: 10px 0;
+    }
+
+    .tech-table td:first-child {
+      color: var(--text-dim);
+      font-weight: 500;
+      width: 40%;
+    }
+
+    .tech-table td:last-child {
+      color: var(--text-main);
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .source-link-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+      background: var(--accent-gold);
+      color: #000;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .source-link-btn:hover {
+      background: var(--accent-gold-light);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+      .oeuvre-header {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <div class="nav-container">
+      <a href="../index.html" class="back-btn">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        Retour au catalogue principal
+      </a>
+      <span class="brand-title">SecondeGuerreMondiale.free.fr</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO DE L'OEUVRE -->
+    <div class="oeuvre-header">
+      <div class="badges-list">
+        <span class="badge badge-type">Film de Guerre</span>
+        <span class="badge badge-year">1977</span>
+      </div>
+      <h1 class="oeuvre-title">Un pont trop loin</h1>
+      <div class="oeuvre-subtitle">Un film épique réalisé par Richard Attenborough, d'après l'ouvrage historique de Cornelius Ryan</div>
+      
+      <div class="quick-meta">
+        <span><strong>Durée :</strong> 175 minutes</span>
+        <span><strong>Pays :</strong> États-Unis / Royaume-Uni</span>
+        <span><strong>Éditeur :</strong> United Artists / MGM</span>
+        <span><strong>Support :</strong> DVD / Blu-Ray / VOD</span>
+      </div>
+    </div>
+
+    <!-- GRILLE CONTENU / SIDEBAR -->
+    <div class="content-grid">
+
+      <!-- COLONNE PRINCIPALE -->
+      <article class="main-article">
+
+        <!-- SYNOPSIS -->
+        <section class="section-box">
+          <h2>Résumé Général & Synopsis</h2>
+          <p>En septembre 1944, grisés par la rapide avancée alliée après la bataille de Normandie, les commandants alliés lancent l'Opération <em>Market Garden</em>. Conçue par le maréchal Montgomery, cette manœuvre aéroportée gigantesque vise à parachuter des milliers d'hommes derrière les lignes allemandes aux Pays-Bas pour capturer une succession de ponts stratégiques sur le Rhin.</p>
+          <p>L'objectif ultime est d'ouvrir une voie directe vers le cœur industriel de l'Allemagne nazie et de clore la guerre avant Noël. Mais entre une logistique complexe, des erreurs d'appréciation du renseignement et la présence inattendue de divisions panzers SS à Arnhem, l'opération se transforme rapidement en un sanglant piège stratégique.</p>
+          
+          <div class="highlight-quote">
+            « Je crois que nous sommes allés un pont trop loin. » — Général Frederick Browning
+          </div>
+        </section>
+
+        <!-- CONTEXTE HISTORIQUE -->
+        <section class="section-box">
+          <h2>Contexte Historique & Rigueur Cinématographique</h2>
+          <p>Considéré comme l'un des plus grands films de guerre de l'histoire du cinéma, <em>Un pont trop loin</em> se distingue par son incroyable réalisme tactique et le soin accordé à la fidélité des faits historiques répertoriés par Cornelius Ryan.</p>
+          
+          <ul class="key-points">
+            <li><strong>Moyens impressionnants :</strong> Utilisation de véritables blindés, d'avions C-47 Dakota et de véritables sauts de parachutistes sans effets numériques.</li>
+            <li><strong>Distribution internationale légendaire :</strong> Sean Connery, Anthony Hopkins, Michael Caine, Gene Hackman, Robert Redford, Laurence Olivier, Ryan O'Neal, James Caan, Laurence Olivier.</li>
+            <li><strong>Regard lucide sur le commandement :</strong> Une analyse sans concession des rivalités d'état-major et de l'excès d'optimisme des hauts commandants alliés face à la ténacité de la Wehrmacht.</li>
+          </ul>
+        </section>
+
+        <!-- PISTES DE REFLEXION -->
+        <section class="section-box">
+          <h2>Structure & Séquences Clés</h2>
+          <p>Le film retrace chronologiquement le déroulement dramatique de l'opération :</p>
+          <p><strong>1. Le Parachutage Géant (Opération Market) :</strong> Le largage coordonnée de la 101ᵉ, de la 82ᵉ américaine et de la 1er Division aéroportée britannique aux Pays-Bas.</p>
+          <p><strong>2. La Poussée des Blindés (Opération Garden) :</strong> L'avancée lente et périlleuse du XXXᵉ Corps britannique le long d'une route étroite surnommée « l'Enfer des Panzers ».</p>
+          <p><strong>3. Le Siège d'Arnhem :</strong> La résistance désespérée des parachutistes britanniques du colonel Frost, encerclés au bord du pont d'Arnhem face au IIᵉ Corps Panzers SS.</p>
+        </section>
+
+      </article>
+
+      <!-- SIDEBAR TECHNIQUE -->
+      <aside class="sidebar">
+
+        <div class="section-box">
+          <h2>Fiche Technique</h2>
+          <table class="tech-table">
+            <tr>
+              <td>Titre Original</td>
+              <td>A Bridge Too Far</td>
+            </tr>
+            <tr>
+              <td>Réalisation</td>
+              <td>Richard Attenborough</td>
+            </tr>
+            <tr>
+              <td>Scénario</td>
+              <td>William Goldman</td>
+            </tr>
+            <tr>
+              <td>Production</td>
+              <td>Joseph E. Levine / UA</td>
+            </tr>
+            <tr>
+              <td>Sortie</td>
+              <td>1977</td>
+            </tr>
+            <tr>
+              <td>Langue</td>
+              <td>Anglais / Allemand / Néerlandais (VOSTFR)</td>
+            </tr>
+            <tr>
+              <td>Distribution</td>
+              <td>MGM / United Artists</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="section-box">
+          <h2>Ressources & Compléments</h2>
+          <p style="font-size: 0.85rem;">Notice, fiches d'archives et références relatives à l'opération Market Garden :</p>
+          <a href="#" target="_blank" class="source-link-btn">Consulter la fiche MGM</a>
+          <a href="#" target="_blank" class="source-link-btn" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-main); margin-top: 8px;">Dossier Opération Market Garden</a>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="margin-top: 60px; border-top: 1px solid var(--border-color); padding: 30px 24px; text-align: center; color: var(--text-dim); font-size: 0.85rem;">
+    <p><strong>SecondeGuerreMondiale.free.fr</strong> — Fiche analytique patrimoniale</p>
+  </footer>
+
+</body>
+</html>
