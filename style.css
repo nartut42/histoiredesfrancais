@@ -1,0 +1,222 @@
+/* Style général - Histoire d'une France */
+:root {
+    --primary-color: #7a1c1c; /* Rouge bordeaux royal */
+    --primary-hover: #5a1313;
+    --accent-color: #c5a059; /* Or antique */
+    --secondary-color: #1e293b; /* Bleu nuit sombre */
+    --bg-color: #fcfaf7; /* Parchemin clair */
+    --card-bg: #ffffff;
+    --text-color: #2b2b2b;
+    --text-muted: #64748b;
+    --border-color: #e2d9cc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Header avec affichage complet de l'image */
+header {
+    background-color: #d8c7b2; /* Maintient la couleur de fond parchemin sur les côtés */
+    background-image: url('bande_haut_site.png');
+    background-position: center center;
+    background-size: contain; /* Affiche l'image entière sans couper le haut ou le bas */
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 28vw; /* Hauteur ajustée pour laisser respirer tout le visuel */
+    min-height: 220px;
+    max-height: 360px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+header h1, header p {
+    display: none;
+}
+
+/* Navigation compacte avec menu déroulant */
+nav {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.6rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Style du menu déroulant */
+.dropdown-container select {
+    background-color: #ffffff;
+    color: var(--secondary-color);
+    border: 1px solid var(--accent-color);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    max-width: 320px;
+}
+
+.dropdown-container select:hover {
+    border-color: var(--primary-color);
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    header {
+        height: 25vw;
+        min-height: 110px;
+    }
+    nav {
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+    .dropdown-container select {
+        max-width: 200px;
+    }
+}
+
+/* Layout Container */
+.container {
+    max-width: 950px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Blocks & Content */
+.intro-box {
+    background-color: #f4efe6;
+    border-left: 5px solid var(--accent-color);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.intro-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.chapter-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.chapter-card h2, .chapter-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #f0e6d6;
+    padding-bottom: 0.5rem;
+}
+
+.chapter-card p {
+    margin-bottom: 1.3rem;
+    text-align: justify;
+}
+
+.chapter-card ul {
+    margin: 1rem 0 1.5rem 2rem;
+}
+
+.chapter-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 0.7rem 1.4rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-disabled {
+    background-color: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+.nav-buttons {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: #94a3b8;
+    margin-top: 4rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.85rem;
+    border-top: 3px solid var(--accent-color);
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Responsive / Adaptation Mobile */
+@media (max-width: 768px) {
+    header {
+        background-size: contain;
+        min-height: 120px;
+    }
+}
